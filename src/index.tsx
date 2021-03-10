@@ -1,22 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import './index.css';
 import App from './App';
-import Music from './Music'
-
+import Routes from './routes';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
-      <div>
-        <Route path="/" exact component={App} />
-        <Route path="/music" component={Music} />
-      </div>
-     
+      <App>
+        <Routes />
+      </App>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

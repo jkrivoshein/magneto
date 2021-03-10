@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Music = () => {
+const Events = () => {
   return (
     <div className="">
-      <h1>Music</h1>
+      <h1>Events</h1>
     </div>
   );
 }
-export default Music;
+export default Events;

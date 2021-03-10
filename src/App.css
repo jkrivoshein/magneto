@@ -1,5 +1,26 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #ddd;
+}
+a.selected {
+  color: red;
+}
+
 .App {
   text-align: center;
+  background-image: url('./guitar.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
 }
 
 .App-logo {
@@ -17,8 +38,6 @@
 }
 
 .App-header {
-  background-color: black;
-  opacity: 0.8;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
@@ -26,18 +45,6 @@
   justify-content: space-between;
   font-size: 1em;
   color: white;
-}
-
-a, a:visited {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: #ddd;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .App-menu-list {
