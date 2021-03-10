@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 
-import './App.css';
+import './App.scss';
 
 interface PropTypes {
   children: object,
 }
 
 function AppRouter(props: PropTypes) {
-const [page, setPage] = useState('/')
+const [page, setPage] = useState('home')
   useEffect(() => {
     console.log(page)
   }, [page]);

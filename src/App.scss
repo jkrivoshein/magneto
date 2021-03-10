@@ -1,0 +1,63 @@
+$font-color: white;
+$menu-border: 1px solid $font-color;
+
+.App {
+  text-align: center;
+  background-image: url('./guitar.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+
+  .App-header {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+  
+    .App-logo {
+      margin: .5em 1.5em;
+      font-family: Fantasy;
+    }
+  
+    .App-menu-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    
+      .App-menu-item {
+        margin: 0 3em;
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  &.page-home {
+    .home {
+      border: $menu-border;
+    }
+  }
+  &.page-music {
+    .music {
+      border: $menu-border;
+    }
+  }
+  &.page-photography {
+    .photography {
+      border: $menu-border;
+    }
+  }
+  &.page-events {
+    .events {
+      border: $menu-border;
+    }
+  }
+  &.page-about {
+    .about {
+      border: $menu-border;
+    }
+  }
+}
