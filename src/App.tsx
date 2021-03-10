@@ -1,20 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import guitar from './guitar.jpeg';
 import './App.css';
 
-function Index() {
-  return <h2>Home</h2>;
-}
-
-function Product() {
- return <h2>This is a page for product with ID </h2>;
-}
-
 function AppRouter() {
   return (
-    <Router>
       <div className="App">
       <div className="App-header">
         <h1 className="App-logo">Lodestone</h1>
@@ -31,9 +22,7 @@ function AppRouter() {
       </div>
     </div>
     
-        <Route path="/" exact component={Index} />
-        <Route path="/products/:id" component={Product} />
-    </Router>
+     
   );
 }
 
