@@ -28,6 +28,14 @@
   color: white;
 }
 
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #ddd;
+}
+
 .App-link {
   color: #61dafb;
 }
