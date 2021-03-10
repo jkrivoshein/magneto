@@ -63,6 +63,9 @@ a.selected {
   border: 1px solid white;
 }
 
+.App.page-home > .App-header > .App-menu-list > .home {
+  border: 1px solid white;
+}
 
 /* @keyframes App-logo-spin {
   from {
