@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 
 import './App.scss';
@@ -8,10 +8,7 @@ interface PropTypes {
 }
 
 function AppRouter(props: PropTypes) {
-const [page, setPage] = useState('home')
-  useEffect(() => {
-    console.log(page)
-  }, [page]);
+  const [page, setPage] = useState('home')
 
   return (
       <div className={`App page-${page}`}>
