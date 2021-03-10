@@ -26,6 +26,10 @@ const [page, setPage] = useState('home')
           </ul>
         </div>
       {props.children}
+      <footer>
+        <span>&copy;2021 Lodestone Studio</span> |
+        <span>powered by magneto</span>
+      </footer>
     </div>
     
      
