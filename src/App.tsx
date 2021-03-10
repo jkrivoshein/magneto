@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import guitar from './guitar.jpeg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="App-logo">Lodestone</h1>
+        <ul className="App-menu-list">
+          <li className="App-menu-item selected">Home</li>
+          <li className="App-menu-item">Music</li>
+          <li className="App-menu-item">Photography</li>
+          <li className="App-menu-item">Events</li>
+          <li className="App-menu-item">About</li>
+        </ul>
       </header>
+      <body>
+        <img src={guitar} className="App-background" alt="logo" />
+      </body>
     </div>
   );
 }
