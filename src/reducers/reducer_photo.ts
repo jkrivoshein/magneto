@@ -17,7 +17,7 @@ export default function musicReducer(
     case GET_PHOTOS_SUCCESS:
       console.log(action)
       return {
-        ...action.payload.data
+        ...action.payload.data.photo
       }
     
     default:
