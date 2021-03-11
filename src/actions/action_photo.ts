@@ -7,7 +7,7 @@ export function getPhotos() {
       type: GET_PHOTOS,
       payload: {
         request: {
-          url: 'https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=ed1e81b9df15bc0e50ff6efb7803d54f&user_id=10434793%40N00&format=json&nojsoncallback=1'
+          url: 'https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=ed1e81b9df15bc0e50ff6efb7803d54f&user_id=10434793%40N00&format=json&nojsoncallback=1&per_page=20',
         }
       },
     }
