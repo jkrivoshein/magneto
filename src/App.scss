@@ -6,8 +6,9 @@ $menu-border: 1px solid $font-color;
   background-image: url('./guitar.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
+  width: 100vw;
   height: 100vh;
+  position: fixed;
 
   .App-header {
     min-height: 10vh;
@@ -69,7 +70,7 @@ $menu-border: 1px solid $font-color;
     display: flex;
     position: absolute;
     bottom: 20px;
-    font-size: 13px;
+    font-size: 12px;
     justify-content: center;
     width: 100%;
 
