@@ -8,7 +8,7 @@ export function getTracks() {
       type: GET_TRACKS,
       payload: {
         request: {
-          url: 'https://soundcloud.com/oembed?format=json&url=http%3A//www.soundcloud.com/djlodestone/tracks'
+          url: 'https://soundcloud.com/oembed?format=json&url=http%3A//www.soundcloud.com/djlodestone'
         }
       },
     }
