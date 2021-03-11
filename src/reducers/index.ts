@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux';
-import musicReducer from './reducer_music'
+import photoReducer from './reducer_photo'
 
 
 const rootReducer = combineReducers({
-  music: musicReducer,
+  photos: photoReducer,
 });
 
 export default rootReducer

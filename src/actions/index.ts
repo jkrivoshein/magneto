@@ -1,1 +1,1 @@
-export * from './action_music';
+export * from './action_photo';

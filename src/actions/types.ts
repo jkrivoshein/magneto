@@ -1,24 +1,25 @@
-export const GET_TRACKS = 'GET_TRACKS'
-export const GET_TRACKS_SUCCESS = 'GET_TRACKS_SUCCESS'
-
-export interface Track {
-  author_name: string,
-  author_url: string,
-  description: string,
-  height: number,
-  html: string,
-  provider_name: string,
-  provider_url: string,
-  thumbnail_url: string,
+export const GET_PHOTOS = 'GET_PHOTOS'
+export const GET_PHOTOS_SUCCESS = 'GET_PHOTOS_SUCCESS'
+//{ "id": "50640124776", "owner": "10434793@N00", "secret": "7f91cdfec7", "server": "65535", "farm": 66, "title": "Greenlake Reflection (portfolio candidate)", "ispublic": 1, "isfriend": 0, "isfamily": 0 },
+interface Photo {
+  id: string,
+  owner: string,
+  secret: string,
+  server: string,
+  farm: number,
   title: string,
-  type: string,
-  version: number,
-  width: string
+  ispublic: number,
+  isfriend: number,
+  isfamily: number
 }
 
-interface getTracksAction {
-  type: typeof GET_TRACKS_SUCCESS
+export interface Photos {
+  photos: Photo[]
+}
+
+interface getPhotosAction {
+  type: typeof GET_PHOTOS_SUCCESS
   payload: any
 }
 
-export type MusicActionTypes = getTracksAction
+export type PhotoActionTypes = getPhotosAction
