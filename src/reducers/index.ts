@@ -3,7 +3,7 @@ import musicReducer from './reducer_music'
 
 
 const rootReducer = combineReducers({
-  content: musicReducer,
+  music: musicReducer,
 });
 
 export default rootReducer
