@@ -1,6 +1,6 @@
 export const GET_PHOTOS = 'GET_PHOTOS'
 export const GET_PHOTOS_SUCCESS = 'GET_PHOTOS_SUCCESS'
-interface Photo {
+export interface Photo {
   id: string,
   owner: string,
   secret: string,
@@ -16,7 +16,7 @@ export interface Photos {
   photos: Photo[]
 }
 
-interface getPhotosAction {
+export interface getPhotosAction {
   type: typeof GET_PHOTOS_SUCCESS
   payload: any
 }

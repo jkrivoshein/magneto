@@ -11,7 +11,7 @@ import axiosMiddleware from 'redux-axios-middleware';
 import './index.scss';
 import App from './App';
 import Routes from './routes';
-import rootReducer from './reducers/index'
+import rootReducer from './reducers'
 
 const client = axios.create({ //all axios can be used, shown in axios documentation
   baseURL:'http://localhost:3000/',
