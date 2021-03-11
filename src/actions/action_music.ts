@@ -1,8 +1,6 @@
 
 import { GET_TRACKS } from './types'
 
-const soundCloudClientId = 'dmDh7QSlmGpzH9qQoH1YExYCGcyYeYYC'
-
 export function getTracks() {
     // use existing state first?
     return {
