@@ -23,8 +23,8 @@ class Photography extends Component<PropTypes, PropTypes>  {
     return (
       <div className="albums-container">
         {albums.map((album) => (
-          <div key={album.id} className="album-container" >
-            <img src={`https://live.staticflickr.com/${album.server}/${album.primary}_${album.secret}_w.jpg`}/>
+          <div key={album.id} className="album-container  " >
+            <img src={`https://live.staticflickr.com/${album.server}/${album.primary}_${album.secret}_n.jpg`}/>
           </div>
         ))}
       </div>
