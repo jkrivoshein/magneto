@@ -1,0 +1,25 @@
+.albums-container {
+  display: flex;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+  align-items: flex-start;
+
+  .album-container {
+    border: 8px solid #eee;
+    margin: 8px;
+    height: fit-content;
+  }
+}
+
+.App.page-photography {
+  background-image: none;
+
+  footer {
+    position: sticky;
+  }
+}
