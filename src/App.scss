@@ -8,7 +8,7 @@ $menu-border: 1px solid $font-color;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: sticky;
 
   .App-header {
     min-height: 10vh;
@@ -68,7 +68,7 @@ $menu-border: 1px solid $font-color;
   footer {
     color: #ccc;
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     font-size: 12px;
     justify-content: center;

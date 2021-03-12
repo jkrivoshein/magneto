@@ -1,5 +1,8 @@
 
-import { GET_PHOTOS } from './types'
+import {
+  GET_PHOTOS,
+  GET_ALBUMS
+} from './types'
 
 export function getPhotos() {
     // use existing state first?
@@ -11,4 +14,15 @@ export function getPhotos() {
         }
       },
     }
+}
+
+export function getAlbums() {
+  return {
+    type: GET_ALBUMS,
+    payload: {
+      request: {
+        url: 'https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=ed1e81b9df15bc0e50ff6efb7803d54f&user_id=10434793%40N00&format=json&nojsoncallback=1',
+      }
+    },
+  }
 }
