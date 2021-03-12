@@ -31,7 +31,7 @@ class Albums extends Component<PropTypes, PropTypes>  {
       <div className="albums-container">
         {albums.map((album) => (
           <div key={album.id} className="album-container" onClick={this.handleClick.bind(this, album.id)}>
-            <img alt={album.title._content}  src={`https://live.staticflickr.com/${album.server}/${album.primary}_${album.secret}_n.jpg`}/>
+            <img alt={album.title._content} src={`https://live.staticflickr.com/${album.server}/${album.primary}_${album.secret}_q.jpg`}/>
             <div className="album-text-container">
                 <h3>{album.title._content}</h3>
                 <p>{album.description._content}</p>

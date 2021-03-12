@@ -1,13 +1,13 @@
 .albums-container, .photos-container {
   display: flex;
-  width: 75%;
+  width: 70%;
   position: relative;
   margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 50px;
-  align-items: center;
+  align-items: flex-start;
   background-color: black;
   z-index: 2;
 
@@ -18,6 +18,10 @@
     padding: 8px;
     position: relative;
     cursor: pointer;
+
+    img {
+      width: 200px;
+    }
 
     .album-text-container {
       position: absolute;
