@@ -30,38 +30,35 @@ $menu-border: 1px solid $font-color;
       width: 100%;
     
       .App-menu-item {
-        padding: 10px 20px;
-        margin: 0 2em;
-        a {
-          padding: 30px;
-        }
+        padding: 10px 0;
+        margin: 0 3em;
       }
     }
   }
 
   &.page-home {
     .home {
-      border: $menu-border;
+      border-bottom: $menu-border;
     }
   }
   &.page-music {
     .music {
-      border: $menu-border;
+      border-bottom: $menu-border;
     }
   }
   &.page-photography {
     .photography {
-      border: $menu-border;
+      border-bottom: $menu-border;
     }
   }
   &.page-events {
     .events {
-      border: $menu-border;
+      border-bottom: $menu-border;
     }
   }
   &.page-about {
     .about {
-      border: $menu-border;
+      border-bottom: $menu-border;
     }
   }
 
