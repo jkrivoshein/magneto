@@ -1,6 +1,6 @@
 .albums-container {
   display: flex;
-  width: 70%;
+  width: 75%;
   position: relative;
   margin: auto;
   flex-direction: row;
@@ -10,9 +10,35 @@
   align-items: flex-start;
 
   .album-container {
-    border: 8px solid #eee;
+    border: 8px solid white;
     margin: 8px;
     height: fit-content;
+    padding: 5px;
+    position: relative;
+
+    .album-text-container {
+      position: absolute;
+      text-align: center;
+      width: 70%;
+      height: 100%;
+      top: 40%;
+      padding: 0px 45px;
+      display: none;
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    &:hover {
+      img {
+        opacity: 0.4;
+      }
+      .album-text-container {
+        display: block;
+      }
+    }
   }
 }
 

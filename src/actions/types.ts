@@ -42,7 +42,10 @@ export interface Album {
   count_photos: number,
   count_videos: number, 
   title: {
-    content: string
+    _content: string
+  },
+  description: {
+    _content: string
   }
 }
 
