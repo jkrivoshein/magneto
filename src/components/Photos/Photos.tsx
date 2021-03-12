@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getPhoto } from './actions'
-import { Photo } from './actions/types'
-import './Albums.scss'
+import { getPhoto } from '../../actions'
+import { Photo } from '../../actions/types'
 import './Photos.scss'
 
 

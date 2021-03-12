@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { getPhotos, getAlbums } from './actions';
-import { Photo, Album } from './actions/types'
+import { getPhotos, getAlbums } from '../../actions';
+import { Photo, Album } from '../../actions/types'
 import './Albums.scss'
 
 interface PropTypes {

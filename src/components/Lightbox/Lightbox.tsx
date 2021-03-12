@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Photo } from './actions/types'
+import { Photo } from '../../actions/types'
 import './Lightbox.scss'
 
 interface PropTypes {

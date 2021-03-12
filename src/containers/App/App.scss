@@ -57,11 +57,17 @@ $menu-border: 1px solid $font-color;
     }
   }
   &.page-events {
+    &> div:not(.App-header) {
+      height: 100%;
+    }
     .events {
       border-bottom: $menu-border;
     }
   }
   &.page-about {
+    &> div:not(.App-header) {
+      height: 100%;
+    }
     .about {
       border-bottom: $menu-border;
     }

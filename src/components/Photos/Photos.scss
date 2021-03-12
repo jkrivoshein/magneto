@@ -1,5 +1,16 @@
 .photos-container {
   width: 60%;
+  display: flex;
+  width: 70%;
+  position: relative;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+  align-items: flex-start;
+  background-color: black;
+  margin-top: 2em;
 
   .photo-container {
     border: 2px solid white;

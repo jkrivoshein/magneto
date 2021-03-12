@@ -1,11 +1,11 @@
 import { Route, Redirect } from "react-router-dom";
-import Home from './Home'
-import Music from './Music'
-import Albums from './Albums'
-import Photos from './Photos'
-import Events from './Events'
-import About from './About'
-import Lightbox from "./Lightbox";
+import Home from './components/Home/Home'
+import Music from './containers/Music/Music'
+import Albums from './containers/Photo/Albums'
+import Photos from './components/Photos/Photos'
+import Lightbox from "./components/Lightbox/Lightbox";
+import Events from './containers/Events/Events'
+import About from './containers/About/About'
 
 const Routes = () => {
   return (

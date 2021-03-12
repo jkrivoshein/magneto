@@ -9,7 +9,7 @@ import axiosMiddleware from 'redux-axios-middleware';
 
 
 import './index.scss';
-import App from './App';
+import App from './containers/App/App';
 import Routes from './routes';
 import rootReducer from './reducers'
 
