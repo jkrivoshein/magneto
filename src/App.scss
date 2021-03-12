@@ -69,10 +69,16 @@ $menu-border: 1px solid $font-color;
     color: #ccc;
     display: flex;
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     font-size: 12px;
     justify-content: center;
     width: 100%;
+    z-index: 3;
+    height: 40px;
+
+    div {
+      margin-top: 10px;
+    }
 
     span {
       margin: 0 10px;

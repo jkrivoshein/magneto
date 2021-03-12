@@ -9,7 +9,7 @@
   padding-bottom: 50px;
   align-items: flex-start;
   background-color: black;
-  z-index: 2;
+  margin-top: 2em;
 
   .album-container {
     border: 5px solid white;
@@ -52,4 +52,9 @@
 .App.page-photography {
   background-image: none;
   position: sticky;
+
+  footer {
+    background: black;
+    opacity: 0.9;
+  }
 }

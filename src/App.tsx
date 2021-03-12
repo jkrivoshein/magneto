@@ -24,8 +24,10 @@ function AppRouter(props: PropTypes) {
         </div>
       {props.children}
       <footer>
-        <span>&copy;2021 Lodestone Studio</span> |
-        <span>powered by magneto</span>
+        <div>
+          <span>&copy;2021 Lodestone Studio</span>  |
+          <span>powered by magneto</span>
+        </div>
       </footer>
     </div>
     
