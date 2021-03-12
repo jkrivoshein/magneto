@@ -2,10 +2,16 @@
   width: 60%;
   .photo-container {
     border: 2px solid white;
-    margin: 20px;
+    margin: 15px;
     height: fit-content;
     padding: 8px;
     position: relative;
     cursor: pointer;
+
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
   }
 }

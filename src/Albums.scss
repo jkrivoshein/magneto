@@ -8,6 +8,8 @@
   justify-content: center;
   padding-bottom: 50px;
   align-items: center;
+  background-color: black;
+  z-index: 2;
 
   .album-container {
     border: 5px solid white;
@@ -46,8 +48,4 @@
 .App.page-photography {
   background-image: none;
   position: sticky;
-
-  footer {
-    position: sticky;
-  }
 }

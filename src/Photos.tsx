@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+import { getPhoto } from './actions'
 import { Photo } from './actions/types'
 import './Albums.scss'
 import './Photos.scss'
 
+
 interface PropTypes {
   photos: Photo[],
-  history: any
+  history: any,
+  location: {
+    pathname: string
+  },
+  getPhoto: (arg0: Photo) => any
 }
 
 class Photos extends Component<PropTypes, PropTypes>  {
-  handleClick(photoId: string) {
-
+  handleClick(photo: Photo) {
+    this.props.getPhoto(photo)
+    this.props.history.push(`${this.props.location.pathname}/${photo.id}`)
   }
   
   render() {
@@ -22,7 +28,7 @@ class Photos extends Component<PropTypes, PropTypes>  {
     return (
       <div className="photos-container">
         {photos.map((photo) => (
-          <div key={photo.id} className="photo-container" onClick={this.handleClick.bind(this, photo.id)}>
+          <div key={photo.id} className="photo-container" onClick={this.handleClick.bind(this, photo)}>
             <img alt={photo.title} src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_n.jpg`}/>
           </div>
         ))}
@@ -37,5 +43,5 @@ function mapStateToProps (state: any) {
   }
 }
 
-export default connect(mapStateToProps, {})(Photos)
+export default connect(mapStateToProps, { getPhoto })(Photos)
 
