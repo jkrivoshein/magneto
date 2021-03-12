@@ -23,7 +23,7 @@ class Lightbox extends Component<PropTypes, PropTypes> {
         <div className="photo-wrapper" onClick={this.onCloseClick.bind(this)}>
           <div className='photo-main'>
             <div className='photo-content'>
-              <img alt={photo.title} src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_z.jpg`} />
+              <img alt={photo.title} src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_c.jpg`} />
             </div>
           </div>
         </div>
