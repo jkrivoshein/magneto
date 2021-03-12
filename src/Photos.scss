@@ -1,0 +1,11 @@
+.photos-container {
+  width: 60%;
+  .photo-container {
+    border: 2px solid white;
+    margin: 20px;
+    height: fit-content;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+}

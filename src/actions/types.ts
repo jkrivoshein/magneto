@@ -25,7 +25,7 @@ export interface Photos {
 }
 
 export interface getPhotosAction {
-  type: typeof GET_PHOTOS_SUCCESS
+  type: typeof GET_PHOTOS | typeof GET_PHOTOS_SUCCESS
   payload: any
 }
 

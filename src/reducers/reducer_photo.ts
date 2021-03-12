@@ -1,4 +1,5 @@
 import {
+  GET_PHOTOS,
   GET_PHOTOS_SUCCESS,
   GET_ALBUMS_SUCCESS,
   PhotoActionTypes,
@@ -17,12 +18,18 @@ export default function musicReducer (
   action: PhotoActionTypes
 ): PhotoState {
   switch (action.type) {
-    case GET_PHOTOS_SUCCESS:
+    case GET_PHOTOS:
       return {
-        photos: action.payload.data.photos.photo,
+        photos: [],
         albums: state.albums
       }
 
+    case GET_PHOTOS_SUCCESS:
+      return {
+        photos: action.payload.data.photoset.photo,
+        albums: state.albums
+      }
+    
     case GET_ALBUMS_SUCCESS:
       return {
         photos: state.photos,
