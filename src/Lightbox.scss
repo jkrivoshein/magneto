@@ -1,0 +1,24 @@
+.photo-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  .photo-main {
+    top: 15%;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+  .photo-content {
+    position: relative;
+    border: 2px solid white;
+    margin: auto;
+    width: fit-content;
+    padding: 8px;
+  }
+}
