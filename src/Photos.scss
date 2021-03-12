@@ -1,5 +1,6 @@
 .photos-container {
   width: 60%;
+
   .photo-container {
     border: 2px solid white;
     margin: 15px;
@@ -7,7 +8,20 @@
     padding: 8px;
     position: relative;
     cursor: pointer;
+    height: 240px;
+    width: 200px;
 
+    img {
+      width: 200px;
+    }
+
+    .photo-text-container {
+      margin-top: -5px;
+      p {
+        font-size: 12px;
+      }
+    }
+    
     &:hover {
       img {
         opacity: 0.8;

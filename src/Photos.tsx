@@ -30,6 +30,9 @@ class Photos extends Component<PropTypes, PropTypes>  {
         {photos.map((photo) => (
           <div key={photo.id} className="photo-container" onClick={this.handleClick.bind(this, photo)}>
             <img alt={photo.title} src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_q.jpg`}/>
+            <div className="photo-text-container">
+              <p>{photo.title}</p>
+            </div>
           </div>
         ))}
       </div>
