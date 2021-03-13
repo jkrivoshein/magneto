@@ -29,7 +29,7 @@ function AppRouter(props: PropTypes) {
           <li className="App-menu-item about"><Link onClick={() => setPage('about')} to="/about">About</Link></li>
         </ul>
         <div onClick={() => toggleMenu()}>
-          <Menu right isOpen={isOpen}>
+          <Menu right isOpen={isOpen} width="230px">
             <Link className="menu-item" onClick={() => toggleMenu('home')} to="/">Home</Link>
             <Link className="menu-item" onClick={() => toggleMenu('music')} to="/music">Music</Link>
             <Link className="menu-item" onClick={() => toggleMenu('photography')} to="/photography">Photography</Link>
