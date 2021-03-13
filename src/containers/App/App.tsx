@@ -20,7 +20,7 @@ function AppRouter(props: PropTypes) {
   return (
     <div className={`App page-${page}`}>
       <div className="App-header">
-        <h1 className="App-logo">lodestone</h1>
+        <h1 className="App-logo"><Link onClick={() => setPage('home')} to="/">lodestone</Link></h1>
         <ul className="App-menu-list">
           <li className="App-menu-item home"><Link onClick={() => setPage('home')} to="/">Home</Link></li>
           <li className="App-menu-item music"><Link onClick={() => setPage('music')} to="/music">Music</Link></li>

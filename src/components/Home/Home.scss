@@ -1,13 +1,29 @@
+$width-extra-small: 320px;
+$width-small: 580px;
+$width-medium: 800px;
+$width-large: 1200px;
+
 .home-container {
   text-align: center;
   margin-top: 15%;
 
+  @media screen and (max-width: $width-medium){
+    margin-top: 40%;
+  }
+
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+    @media screen and (max-width: $width-small){
+      font-size: 1.5em;
+    }
   }
   
   p {
-    margin-top: -2em;
+    margin-top: -1em;
     font-size: 1.2em;
+
+    @media screen and (max-width: $width-small){
+      font-size: 1em;
+    }
   }
 }
