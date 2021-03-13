@@ -1,3 +1,5 @@
+$width-small: 580px;
+
 .photo-wrapper {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
@@ -12,6 +14,10 @@
     position: absolute;
     width: 100%;
     z-index: 999;
+
+    @media screen and (max-width: $width-small) {
+      top: 20vh;
+    }
   }
 
   .photo-content {
@@ -20,5 +26,10 @@
     margin: auto;
     width: fit-content;
     padding: 8px;
+
+    img {
+      max-width: 90vw;
+      max-height: 90vh;
+    }
   }
 }
