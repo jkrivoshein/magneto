@@ -20,7 +20,7 @@ $width-large: 1200px;
   
   p {
     margin-top: -1em;
-    font-size: 1.2em;
+    font-size: 1.3em;
 
     @media screen and (max-width: $width-small){
       font-size: 1em;
@@ -28,6 +28,10 @@ $width-large: 1200px;
   }
 
   .social-links {
+    margin-top: 2em;
+    a {
+      margin: 0 1em;
+    }
     img {
       width: 30px;
     }
