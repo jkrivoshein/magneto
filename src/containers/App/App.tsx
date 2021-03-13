@@ -16,7 +16,7 @@ function AppRouter(props: PropTypes) {
     if (page)
       setPage(page)
   }
-  console.log(isOpen)
+
   return (
     <div className={`App page-${page}`}>
       <div className="App-header">
