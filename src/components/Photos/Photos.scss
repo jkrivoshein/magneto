@@ -1,7 +1,6 @@
 .photos-container {
   width: 60%;
   display: flex;
-  width: 70%;
   position: relative;
   margin: auto;
   flex-direction: row;
@@ -10,9 +9,22 @@
   padding-bottom: 50px;
   align-items: flex-start;
   background-color: black;
-  margin-top: 2em;
+  margin-top: 6em;
 
+  .photos-back-link-wrapper{
+    margin-top: -60px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
 
+    .text-link {
+      margin-left: 20px;
+      &:before {
+        content: '<<  ';
+        font-size: 20px
+      }
+    }
+  }
 
   .photo-container {
     border: 2px solid white;

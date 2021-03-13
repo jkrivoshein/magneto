@@ -19,6 +19,10 @@ class Photos extends Component<PropTypes, PropTypes>  {
     this.props.getPhoto(photo)
     this.props.history.push(`${this.props.location.pathname}/${photo.id}`)
   }
+
+  goBack() {
+    this.props.history.goBack()
+  }
   
   render() {
     const { photos } = this.props;
@@ -26,6 +30,9 @@ class Photos extends Component<PropTypes, PropTypes>  {
 
     return (
       <div className="photos-container">
+        <div className="photos-back-link-wrapper" onClick={this.goBack.bind(this)}>
+          <p className="text-link">Back to Album</p>
+          </div>
         {photos.map((photo) => (
           <div key={photo.id} className="photo-container" onClick={this.handleClick.bind(this, photo)}>
             <img alt={photo.title} src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_q.jpg`}/>
