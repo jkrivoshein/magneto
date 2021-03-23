@@ -1,5 +1,6 @@
 import {
   GET_PHOTO,
+  GET_PHOTO_SUCCESS,
   GET_PHOTOS,
   GET_PHOTOS_SUCCESS,
   GET_ALBUMS_SUCCESS,
@@ -35,6 +36,12 @@ export default function musicReducer (
     case GET_PHOTO:
       return {
         photo: action.payload.data,
+        photos: state.photos,
+        albums: state.albums
+      }
+    case GET_PHOTO_SUCCESS:
+      return {
+        photo: action.payload.data.photo,
         photos: state.photos,
         albums: state.albums
       }

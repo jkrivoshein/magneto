@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getPhoto } from '../../actions'
+import { getPhotos, getPhoto } from '../../actions'
 import { Photo } from '../../actions/types'
 import './Photos.scss'
 
@@ -12,9 +12,15 @@ interface PropTypes {
     pathname: string
   },
   getPhoto: (arg0: Photo) => any
+  getPhotos: (arg0: string) => any
 }
 
 class Photos extends Component<PropTypes, PropTypes>  {
+  componentDidMount() {
+    const albumId = this.props.location.pathname.split('/')[3]
+    this.props.getPhotos(albumId)
+  }
+
   handleClick(photo: Photo) {
     this.props.getPhoto(photo)
     this.props.history.push(`${this.props.location.pathname}/${photo.id}`)
@@ -52,5 +58,5 @@ function mapStateToProps (state: any) {
   }
 }
 
-export default connect(mapStateToProps, { getPhoto })(Photos)
+export default connect(mapStateToProps, { getPhotos, getPhoto })(Photos)
 

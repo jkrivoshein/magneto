@@ -20,7 +20,6 @@ class Albums extends Component<PropTypes, PropTypes>  {
 
   handleClick(albumId: string) {
     this.props.history.push(`/photography/album/${albumId}`)
-    this.props.getPhotos(albumId)
   }
   
   render() {

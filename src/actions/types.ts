@@ -1,4 +1,5 @@
 export const GET_PHOTO = 'GET_PHOTO'
+export const GET_PHOTO_SUCCESS = 'GET_PHOTO_SUCCESS'
 export const GET_PHOTOS = 'GET_PHOTOS'
 export const GET_PHOTOS_SUCCESS = 'GET_PHOTOS_SUCCESS'
 export const GET_ALBUMS = 'GET_ALBUMS'
@@ -61,7 +62,7 @@ export interface getAlbumsAction {
 }
 
 export interface getPhotoAction {
-  type: typeof GET_PHOTO
+  type: typeof GET_PHOTO | typeof GET_PHOTO_SUCCESS
   payload: any
 }
 

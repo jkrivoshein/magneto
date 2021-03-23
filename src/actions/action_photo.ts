@@ -36,3 +36,14 @@ export function getPhoto(photo: Photo) {
     }
   }
 }
+
+export function getPhotoInfo(photoId: string) {
+  return {
+    type: GET_PHOTO,
+    payload: {
+      request: {
+        url: `https://www.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=ed1e81b9df15bc0e50ff6efb7803d54f&photo_id=${photoId}&format=json&nojsoncallback=1`,
+      }
+    },
+  }
+}
