@@ -1,4 +1,4 @@
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Home from './components/Home/Home'
 import Music from './containers/Music/Music'
 import Albums from './containers/Photo/Albums'
@@ -10,14 +10,11 @@ import About from './containers/About/About'
 const Routes = () => {
   return (
     <div>
-      <Route path="/" >
-        <Redirect to="/"/>
-      </Route>
       <Route path="/" exact component={Home} />
       <Route path="/music" component={Music} />
-      <Route path="/photography" exact component={Albums} />
-      <Route path="/photography/album/:albumId" exact component={Photos} />
-      <Route path="/photography/album/:albumId/:photoId" exact component={Lightbox} />
+      <Route path="/photography" component={Albums} />
+      <Route path="/photography/album/:albumId" component={Photos} />
+      <Route path="/photography/album/:albumId/:photoId" component={Lightbox} />
       <Route path="/events" component={Events} />
       <Route path="/about" component={About} />
     </div>
