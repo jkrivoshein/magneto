@@ -10,7 +10,7 @@ interface PropTypes {
 const body = document.getElementsByTagName('body')[0]
 
 function AppRouter(props: PropTypes) {
-  const [page, setPage] = useState('home')
+  const [, setPage] = useState('home')
   const [isOpen, setState] = useState(false)
   const toggleMenu = (page?: string) => {
     setState(!isOpen)
