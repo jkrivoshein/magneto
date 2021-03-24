@@ -8,19 +8,21 @@ interface PropTypes {
   children: object,
 }
 const body = document.getElementsByTagName('body')[0]
+
 function AppRouter(props: PropTypes) {
-  const [page, setPage] = useState('none')
+  const [page, setPage] = useState('home')
   const [isOpen, setState] = useState(false)
   const toggleMenu = (page?: string) => {
     setState(!isOpen)
-    setBodyClass()
+    setPageName(!isOpen)
   }
-
-  const setBodyClass = () => {
-    const pathname = `page-${window.location.pathname.split('/')[1]}`
-    body.className = pathname ? pathname : 'home'
+  const setPageName = (isOpen?: boolean) => {
+    const pathname = window.location.pathname.split('/')[1]
+    body.className = 'page-'
+    body.className += pathname ? pathname : 'home'
+    body.className += isOpen ? ' bm-open' : ''
   }
-  setBodyClass()
+  setPageName(isOpen)
 
   return (
     <div className="App">
@@ -35,11 +37,11 @@ function AppRouter(props: PropTypes) {
         </ul>
         <div onClick={() => toggleMenu()}>
           <Menu right isOpen={isOpen} width="230px">
-            <Link className="menu-item" onClick={() => toggleMenu('home')} to="/">Home</Link>
-            <Link className="menu-item" onClick={() => toggleMenu('music')} to="/music">Music</Link>
-            <Link className="menu-item" onClick={() => toggleMenu('photography')} to="/photography">Photography</Link>
-            <Link className="menu-item" onClick={() => toggleMenu('events')} to="/events">Events</Link>
-            <Link className="menu-item" onClick={() => toggleMenu('about')} to="/about">About</Link>
+            <Link className="menu-item" to="/">Home</Link>
+            <Link className="menu-item" to="/music">Music</Link>
+            <Link className="menu-item" to="/photography">Photography</Link>
+            <Link className="menu-item" to="/events">Events</Link>
+            <Link className="menu-item" to="/about">About</Link>
           </Menu>
         </div>
       </div>

@@ -9,7 +9,7 @@
 
 .bit-widget-container {
   display: none;
-    position: absolute;
+  position: absolute;
   top: 6em;
   width: 100%;
 
@@ -21,5 +21,11 @@
 body.page-events {
   .bit-widget-container {
     display: block;
+  }
+
+  &.bm-open {
+    .bit-widget-container {
+      display: none;
+    }
   }
 }
