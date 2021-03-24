@@ -25,7 +25,6 @@ let store = createStore(
   )
 )
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -36,5 +35,5 @@ ReactDOM.render(
     </Router>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

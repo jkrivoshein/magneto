@@ -47,41 +47,6 @@ $width-large: 1200px;
     }
   }
 
-  &.page-home {
-    &> div:not(.App-header) {
-      height: 100%;
-    }
-    .home {
-      border-bottom: $menu-border;
-    }
-  }
-  &.page-music {
-    .music {
-      border-bottom: $menu-border;
-    }
-  }
-  &.page-photography {
-    .photography {
-      border-bottom: $menu-border;
-    }
-  }
-  &.page-events {
-    &> div:not(.App-header) {
-      height: 100%;
-    }
-    .events {
-      border-bottom: $menu-border;
-    }
-  }
-  &.page-about {
-    &> div:not(.App-header) {
-      height: 100%;
-    }
-    .about {
-      border-bottom: $menu-border;
-    }
-  }
-
   footer {
     color: #ccc;
     display: flex;

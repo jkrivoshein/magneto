@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu'
 
@@ -7,21 +7,23 @@ import './App.scss';
 interface PropTypes {
   children: object,
 }
-
+const body = document.getElementsByTagName('body')[0]
 function AppRouter(props: PropTypes) {
-  const [page, setPage] = useState('home')
+  const [page, setPage] = useState('none')
   const [isOpen, setState] = useState(false)
   const toggleMenu = (page?: string) => {
     setState(!isOpen)
-    if (page)
-      setPage(page)
+    setBodyClass()
   }
-  useEffect(() => {
-    setPage(window.location.pathname.split('/')[1])
-  }, [])
+
+  const setBodyClass = () => {
+    const pathname = `page-${window.location.pathname.split('/')[1]}`
+    body.className = pathname ? pathname : 'home'
+  }
+  setBodyClass()
 
   return (
-    <div className={`App page-${page}`}>
+    <div className="App">
       <div className="App-header">
         <h1 className="App-logo"><Link onClick={() => setPage('home')} to="/">lodestone</Link></h1>
         <ul className="App-menu-list">

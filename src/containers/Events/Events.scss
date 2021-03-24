@@ -6,3 +6,20 @@
     font-size: 1.2em;
   }
 }
+
+.bit-widget-container {
+  display: none;
+    position: absolute;
+  top: 6em;
+  width: 100%;
+
+  .bit-nav-bar-container, .bit-top-track-button {
+    display: none !important;
+  }
+}
+
+body.page-events {
+  .bit-widget-container {
+    display: block;
+  }
+}

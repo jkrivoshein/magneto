@@ -49,12 +49,14 @@
   }
 }
 
-.App.page-photography {
-  background-image: none;
-  position: sticky;
+body.page-photography {
+  .App {
+    background-image: none;
+    position: sticky;
 
-  footer {
-    background: black;
-    opacity: 0.9;
+    footer {
+      background: black;
+      opacity: 0.9;
+    }
   }
 }
