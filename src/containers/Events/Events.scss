@@ -21,6 +21,16 @@
 body.page-events {
   .bit-widget-container {
     display: block;
+
+    .bit-widget {
+      width: 70%;
+      margin: auto;
+
+      .bit-play-my-city-button {
+        max-width: 250px;
+        margin: 2.5em auto;
+      }
+    }
   }
 
   &.bm-open {
