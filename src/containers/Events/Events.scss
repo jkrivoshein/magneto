@@ -1,3 +1,5 @@
+$width-small: 580px;
+
 .events-container {
   text-align: center;
   margin-top: 15%;
@@ -24,7 +26,12 @@ body.page-events {
 
     .bit-widget {
       width: 70%;
+      max-width: 1000px;
       margin: auto;
+
+      @media screen and (max-width: $width-small){
+        width: 85%;
+      }
 
       .bit-play-my-city-button {
         max-width: 250px;
