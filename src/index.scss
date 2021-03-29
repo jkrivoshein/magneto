@@ -18,15 +18,24 @@ body {
     .home {
       border-bottom: $menu-border;
     }
+    .gist {
+      display: none;
+    }
   }
   &.page-music {
     .music {
       border-bottom: $menu-border;
     }
+    .gist {
+      display: none;
+    }
   }
   &.page-photography {
     .photography {
       border-bottom: $menu-border;
+    }
+    .gist {
+      display: none;
     }
   }
   &.page-events {
@@ -36,13 +45,13 @@ body {
     .events {
       border-bottom: $menu-border;
     }
+    .gist {
+      display: none;
+    }
   }
   &.page-about {
-    &> div:not(.App-header) {
-      height: 100%;
-    }
-    .about {
-      border-bottom: $menu-border;
+    .gist {
+      display: block;
     }
   }
 }
