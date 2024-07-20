@@ -8,9 +8,9 @@ $width-large: 1200px;
 
 .App {
   text-align: center;
-  background-image: url('https://live.staticflickr.com/65535/51017225923_3f1a7790a4_c.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('https://live.staticflickr.com/65535/51017225923_3f1a7790a4_c.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -20,20 +20,23 @@ $width-large: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    font-size: 1em;
+    justify-content: center;
+    font-size: 1.2em;
+    margin: auto;
+    width: fit-content;
     
   
     .App-logo {
-      margin: .5em 1.5em;
       font-weight: 100;
-      color: #ccc;
+      img {
+        width: 300px;
+      }
     }
 
     .App-menu-list {
       list-style: none;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       width: 100%;
     
       .App-menu-item {
@@ -51,7 +54,7 @@ $width-large: 1200px;
     color: #ccc;
     display: flex;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     font-size: 12px;
     justify-content: center;
     width: 100%;

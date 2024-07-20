@@ -27,7 +27,9 @@ function AppRouter(props: PropTypes) {
   return (
     <div className="App">
       <div className="App-header">
-        <h1 className="App-logo"><Link onClick={() => setPage('home')} to="/">lodestone</Link></h1>
+        <div className="App-logo">
+          <img alt="DJLodestone" src="/lodestonerunegod2.png" />
+        </div>
         <ul className="App-menu-list">
           <li className="App-menu-item home"><Link onClick={() => setPage('home')} to="/">Home</Link></li>
           <li className="App-menu-item music"><Link onClick={() => setPage('music')} to="/music">Music</Link></li>
@@ -48,7 +50,7 @@ function AppRouter(props: PropTypes) {
       {props.children}
       <footer>
         <div>
-          <span>&copy;2021 Lodestone Studio</span>  |
+          <span>&copy;2024 Lodestone Studio</span>  |
           <span>powered by magneto</span>
         </div>
       </footer>
