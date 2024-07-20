@@ -1,8 +1,6 @@
 $width-small: 580px;
 
 .events-container {
-  text-align: center;
-  margin-top: 15%;
   p {
     margin-top: -2em;
     font-size: 1.2em;
@@ -12,7 +10,7 @@ $width-small: 580px;
 .bit-widget-container {
   display: none;
   position: absolute;
-  top: 6em;
+  top: 16em;
   width: 100%;
 
   .bit-nav-bar-container, .bit-top-track-button {
