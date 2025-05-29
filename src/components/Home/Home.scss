@@ -5,34 +5,39 @@ $width-large: 1200px;
 
 .home-container {
   text-align: center;
-  margin-top: 15%;
+  padding: 4rem 1rem;
 
-  @media screen and (max-width: $width-medium){
-  }
-
-  h1 {
-    font-size: 2.5em;
-    @media screen and (max-width: $width-small){
-      font-size: 1.5em;
+  .hero {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
-  }
-  
-  p {
-    margin-top: -1em;
-    font-size: 1.3em;
 
-    @media screen and (max-width: $width-small){
-      font-size: 1em;
+    .tagline {
+      font-size: 1.2rem;
+      color: #888;
+      margin-bottom: 2rem;
     }
   }
 
   .social-links {
-    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
     a {
-      margin: 0 1em;
-    }
-    img {
-      width: 30px;
+      display: inline-block;
+      transition: transform 0.2s ease;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
