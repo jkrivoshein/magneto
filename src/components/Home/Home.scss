@@ -7,6 +7,15 @@ $width-large: 1200px;
   text-align: center;
   padding: 4rem 1rem;
 
+  .lodestone-logo {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); // optional
+  }
+
   .hero {
     h1 {
       font-size: 3rem;
