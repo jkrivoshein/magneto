@@ -3,6 +3,12 @@ import './Home.scss';
 const Home = () => {
   return (
     <div className="home-container">
+      <img
+        className="lodestone-logo"
+        src="/images/lodestone-fractal.jpg"
+        alt="Lodestone Fractal"
+      />
+      
       <header className="hero">
         <h1>Lodestone</h1>
         <p className="tagline">The Lodestone project is an ongoing exploration of dimensional perception.</p>
