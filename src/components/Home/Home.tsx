@@ -5,7 +5,7 @@ const Home = () => {
     <div className="home-container">
       <img
         className="lodestone-logo"
-        src="/images/lodestone-fractal.jpg"
+        src="/lodestone-fractal.jpg"
         alt="Lodestone Fractal"
       />
       
